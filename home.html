@@ -1,0 +1,132 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/top-nav.css">
+<link rel="stylesheet" href="css/slide.css">
+<link rel="icon" type="image/x-icon" href= "image/favicon.png">
+<title>Profile</title>
+</head>
+<body>
+
+	
+
+	<div class="top-container">
+		<div class="logo">
+		<a href="banner.html">ABBY</a>
+
+		</div>
+		<div class="top-nav">
+		<nav>
+			<ul>
+				
+				<li><a href="home.html"> Profile </a></li>
+				<li><a href="hobbies.html"> Hobbies </a></li>
+				<li><a href="work.html"> Work </a></li>
+			</ul>
+		<nav>
+		</div>
+	</div>
+	<fieldset style="width:40%; height:650px;">
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="image/gale2.jpg" alt="at the beach" style="width:100%; height:600px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="image/pic6.jpeg" alt="pic6" style="width:100%; height:600px;">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="image/family.jpeg" alt="family" style="width:100%; height:600px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="image/family3.jpg" alt="family3"style="width:100%; height:600px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="image/family2.jpg" alt="family2" style="width:100%; height:600px;">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</fieldset>
+
+
+<fieldset style="width:59%; margin-left:41%; margin-top:-39.2%; border-style: dashed;">
+<legend>Personal Information</legend>
+<div>
+	<p><pre><b>Full Name		:<span style="color:#F9F7F7;"> Abegael Joy B. Estillero</b></pre></span></p>
+	<p><pre><b>Age				:<span style="color:#F9F7F7;"> 31 yrs. old  </b></span></pre></p> 
+	<p><pre><b>Gender			:<span style="color:#F9F7F7;"> Female </b></span></pre></p> 
+	<p><pre><b>Address			:<span style="color:#F9F7F7;"> Blk. 72 Lot 32 J.P. Rizal St. Upper Bicutan, Taguig City </b></span></pre></p>             
+	<p><pre><b>Birthday			:<span style="color:#F9F7F7;"> November 11, 1990 </b></span></pre></p>
+	<p><pre><b>Place of Birth	:<span style="color:#F9F7F7;"> Caloocan Manila   </b></span></pre></p>
+	<p><pre><b>Religion			:<span style="color:#F9F7F7;"> Born Again Christian   </b></span></pre></p>
+	<p><pre><b>Citienship		:<span style="color:#F9F7F7;"> Filipino   </b></span></pre></p>
+	<p><pre><b>Contact Number	:<span style="color:#F9F7F7;"> +63 977 747 1027  </b></span></pre></p>
+ </div>
+ 
+</fieldset>
+
+<fieldset style="width:59%; margin-left:41%; margin-top:2.4%; border-style: dashed;">
+	<legend>Family Information</legend>
+	<p><pre><b>Mother's Name	:<span style="color:#F9F7F7;"> Alma B. Rondolo (deceased)</b></span></pre></p>
+    <p><pre><b>Place of Birth	:<span style="color:#F9F7F7;"> Butuan City</b></span></pre></p>
+    <p><pre><b>Father's Name	:<span style="color:#F9F7F7;"> Antonio P. Estillero (deceased)</b></span></pre></p> 
+    <p><pre><b>Place of Birth	:<span style="color:#F9F7F7;"> Bicol</b></span></pre></p>
+    <p><pre><b>No. of Siblings	:<span style="color:#F9F7F7;"> Five</b></span></pre></p>
+	
+
+</fieldset>
+
+
+
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>

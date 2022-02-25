@@ -1,0 +1,121 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/top-nav.css">
+<link rel="stylesheet" href="css/slide.css">
+<link rel="icon" type="image/x-icon" href= "image/favicon.png">
+<title>Work</title>
+</head>
+<body>
+
+	
+
+	<div class="top-container">
+		<div class="logo">
+		<a href="banner.html">ABBY</a>
+
+		</div>
+		<div class="top-nav">
+		<nav>
+			<ul>
+				
+				<li><a href="home.html"> Profile </a></li>
+				<li><a href="hobbies.html"> Hobbies </a></li>
+				<li><a href="work.html"> Work </a></li>
+			</ul>
+		<nav>
+		</div>
+	</div>
+	<fieldset style="width:40%; height:615px;">
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="image/workmode.jpg" alt="team at the office" style="width:100%; height:600px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="image/office_team.jpeg" alt="team lunchout" style="width:100%; height:600px;">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="image/team_lunchout.jpeg" style="width:100%; height:600px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="image/ict.jpg" style="width:100%; height:600px;">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</fieldset>
+
+
+<fieldset style="width:59%; margin-left:41%; margin-top:-37%; border-style: dashed;">
+	<legend>WORK</legend>
+	<p><b>I'm currently working as a Business System Analyst in a private company located at Binan Laguna.</b></p>
+
+</fieldset>
+
+
+<fieldset style="width:59%; margin-left:41%; margin-top:3%; border-style: dashed;">
+	<legend>Work Experience</legend>
+	<p><b>Multi-skilled business process and system analyst with 11 years of solid experience working with semiconductor manufacturing operations with Manufacturing Execution Systems (MES).</b></p>
+	<ul>
+	<li><b>First level escalation technical support of MES.</b></li>
+	<li><b>Perform process and system improvement including automation in MES.</b></li>
+	<li><b>Familiar with Project Methodology and documentation.</b></li>
+	<li><b>Interfaces with different departments across various levels (production to management).</b></li>
+	<li><b>Performs internal audit for customer document/specification.</b></li>
+	<li><b>Knowledgeable in Systems, Applications and Products(SAP).</b></li>
+	<li><b>Knowledgeable in Basic MS SQL and Oracle query.</b></li>
+	<li><b>Administer company mobile phone and coordinate to service provider.</b></li>
+	</ul> 
+
+</fieldset>
+
+
+
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>

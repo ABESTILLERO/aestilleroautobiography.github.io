@@ -1,0 +1,133 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/top-nav.css">
+<link rel="stylesheet" href="css/slide.css">
+<link rel="icon" type="image/x-icon" href= "image/favicon.png">
+<title>Hobbies</title>
+</head>
+<body>
+
+	
+
+	<div class="top-container">
+		<div class="logo">
+		<a href="banner.html">ABBY</a>
+
+		</div>
+		<div class="top-nav">
+		<nav>
+			<ul>
+				
+				<li><a href="home.html"> Profile </a></li>
+				<li><a href="hobbies.html"> Hobbies </a></li>
+				<li><a href="work.html"> Work </a></li>
+			</ul>
+		<nav>
+		</div>
+	</div>
+	<fieldset style="width:40%; height:615px;">
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="image/wawatower.jpg" alt="pic1" style="width:100%; height:600px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="image/withnature.jpg" alt="with nature" style="width:100%; height:600px;">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="image/attagaytay.jpg" alt="Tagaytay view" style="width:100%; height:600px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="image/castle.jpg" alt="castle" style="width:100%; height:600px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="image/atbeach.jpg" alt="castle" style="width:100%; height:600px;">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</fieldset>
+
+
+<fieldset style="width:59%; margin-left:41%; margin-top:-37%; border-style: dashed;">
+	<legend>HOBBIES</legend>
+	<ul>
+	<li><b>Singing</b></li>
+	<li><b>Listening to Christian songs</b></li>
+	<li><b>Eating</b></li>
+	<li><b>Scrolling in Social Media</b></li>
+	<li><b>Travel</b></li>
+	<li><b>Learning</b></li>
+	</ul> 
+	
+
+</fieldset>
+<fieldset style="width:59%; margin-left:41%; margin-top:6%; border-style: dashed;">
+	<legend>Favorite Foods</legend>
+	<ul>
+	<li><b>Adobo</b></li>
+	<li><b>Pork Sisig</b></li>
+	<li><b>Buttered Shrimp</b></li>
+	<li><b>Buko Salad</b></li>
+	<li><b>Pancit Palabok</b></li>
+	<li><b>Barbeque</b></li>
+	</ul> 
+	
+
+</fieldset>
+
+
+
+
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
